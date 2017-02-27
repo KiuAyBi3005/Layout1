@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#96d69e"
+        android:minHeight="?attr/actionBarSize" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+           <Button
+               android:id="@+id/btn_1"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:background="@mipmap/format"
+
+
+               />
+            <TextView
+                android:id="@+id/txt_morephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Phone"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"/>
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="80dp"
+                android:background="@mipmap/find"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"></ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@mipmap/eyedropper" />
+
+
+
+
+</LinearLayout>
